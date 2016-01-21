@@ -1,9 +1,65 @@
 Notes. . .
 
-Use git init to create a new git repository. Need repository to store all git commits
+Initializing repo 
+ - Use git init to create a new git repository. Need repository to store all git commits
 "saved versions" of the files in your directory. 
 
-Staging area refers to the files that are to be executed with the git commit. It allows
+Staging Process
+ - Staging area refers to the files that are to be executed with the git commit. It allows
 us to determine which files we would like to save as a recording of changes and which 
-files we want to remain seperate. It's different from the repository and the working
-directory in that it does not allow
+files we want to remain seperate.
+
+Process of commit: 
+ 1) make changes to file in working directory
+ 2) add files to staging area --- git add (filename)
+ 3) commit them to repo --- git commit
+ 4) insert comment after redirect
+
+Checking differences between key places: 
+ - Working directory vs. Staging area = git diff 
+ - Staging area vs. Repository = git diff --staged
+ - Commit 1 vs. Commit 2 = git diff (commit ID_OLD) (commit ID_NEW)
+ **** To compare always use (OLDER COMMIT) (NEWER COMMIT) *****
+
+Concept of Branches in Git
+ - There are different branches you can add other than master. Master is the final project 
+and all branches under it can be used for different variations of the product. For instance, 
+you can have an experimental branch or "unique features" branch that you may not want include in the final or if your playing 
+a game you might alter the project to include an "easy mode" and change different 
+variations of the game while having the final one unchanged. We use multiple branches 
+so that multiple people can make different changes without altering the final 
+production. If everyone makes variations of the master all at once, there would be 
+a lot of confusion and disorganzation. 
+
+Why use diagrams?
+- The use of diagrams helps in displaying the number of branches within your repo 
+and where you are in the development stage. Also it shows which commits belong to 
+which branch, what type of changes occured in which branch, etc...
+ *Remember, merging creates is its own commit. 
+
+Process of Merging 
+ -Merging two branches into one is useful in the sense that you want to finalize 
+your changes/experimentation into your final production. When merging you must use 
+git merge (branch1) (branch2) 
+ ---- branch1 -> branch2 *(branch 1 goes into branch2)
+
+Merge Conflicts
+ - Merge conflicts arise when there is different changes of the same file. In order 
+to resolve the conflict you must go into the file and manually change the file
+so that it accounts for all changes.
+
+Note on Merge Conflict: 
+ <<<< Head = your version of the code 
+ ===== = other persons version of the code 
+ - master = what's included in the master version of the code 
+ 
+*** IMPORTANT GIT CONFIGURATION ***
+ - After pressing enter in our code (ex: var x = 34; (enter)) Mac/Unix will add a new char
+line feed "LF" and windows adds a carriage return and line feed "CRLF". This causes
+an error if a windows wants to edit a file made under mac because it will convert 
+all LF to CRLF and thus we need to configure it by using . . .
+git config --global core.autocrlf true
+
+Other Useful Git commands: 
+ - git show (commitID) = reveal all changes in the commit 
+ - git log --graph --oneline = more comprehensive view of git log (only comments)
