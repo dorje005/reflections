@@ -2,3 +2,8 @@ Notes. . .
 
 Use git init to create a new git repository. Need repository to store all git commits
 "saved versions" of the files in your directory. 
+
+Staging area refers to the files that are to be executed with the git commit. It allows
+us to determine which files we would like to save as a recording of changes and which 
+files we want to remain seperate. It's different from the repository and the working
+directory in that it does not allow
