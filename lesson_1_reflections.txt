@@ -1,0 +1,32 @@
+Notes . . . 
+
+Looking at two versions of a file helps identify potential errors and modifications 
+that can be performed to improve code. 
+
+Also, when comparing two files in command line: 
+
+1) WINDOWS: FC (file1) (file2)
+2) Mac/Linux: diff -u (file1) (file2)
+
+Check commit history --- git log 
+Comparing Git Commits --- git diff (commitID_1) (commitID_2)
+
+Git commit means to save the file and all changes included in it. 
+Git repository used when multiple files are interdependent on one another. 
+(ex: HTML/CSS for a webpage, chapters in a book, etc...)
+Git then commits all the files in the repository and compares them together as opposed 
+to individually. 
+
+If you want to be able to go back to a previous commit and make that your final you
+must use git checkout (commitID). This is useful if you want to track a bug but not sure where it is located and you
+don't necessararily want to look through every line of code. 
+After using git checkout to identify where the bug is, you can then use git diff to 
+track the differences between the commit with the bug and the one without to 
+correctly identify where the error had occured.  
+
+More on version control: 
+It helps programmers delve into a project without fear of "breaking" the infrastructure. 
+Useful for understanding architectural differences and enhances logical thinking within programs. 
+Idea of exploration without worrying about messing up the entire project. 
+
+
