@@ -1,0 +1,7 @@
+Notes. . .
+
+Benefits of using remote repository
+ - Using a remote repository such as GitHub allows you to share your code with others so that they can also use it and edit it for their 
+own purposes. It follows the theme of open source that Git follows and as a result, others have the ability to make contributions 
+to your own code as well. Keeping your work local is ideal for a private project but in the real business world, it is common practice
+to use open source. 
