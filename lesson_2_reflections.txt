@@ -1,0 +1,4 @@
+Notes. . .
+
+Use git init to create a new git repository. Need repository to store all git commits
+"saved versions" of the files in your directory. 
