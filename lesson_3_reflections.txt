@@ -5,3 +5,21 @@ Benefits of using remote repository
 own purposes. It follows the theme of open source that Git follows and as a result, others have the ability to make contributions 
 to your own code as well. Keeping your work local is ideal for a private project but in the real business world, it is common practice
 to use open source. 
+
+Push, Pull, Remote 
+ - Push = local repo -> public GitHub repo . . . git push (remote) master
+ - Pull = public GitHub repo -> local repo . . . git pull (remote) master
+ *always better practice to manually pull instead of letting Git automatically 
+  stay up-to-date with your remote repository
+ - Remote is used when you want to connect your local repo with online repo 
+first create a new remote -> git remote add (name) url of repository
+
+Git Fork 
+ - Allows you to copy a repository from another user onto your GitHub account. Without git fork, you would have to first clone the other persons repo onto your computer. Then create 
+a new repo from your computer and then commit that repo onto GitHub. However, Forking does NOT allow you edit the original version of repo. Forking also ALWAYS points back 
+to the original and allows you to see the commits the user has made
+ - Git Fork button available on GitHub only (no command for it) 
+ - After forking, It is good practice to edit your file on your computer as oppopsed to GitHub. 
+
+
+
